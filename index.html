@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Jarrett Zhang</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+        <style>
+            :root
+            {
+                --background:#0b0f14;
+                --card:#111827;
+                --soft:#1f2937;
+                --text:#f3f4f6;
+                --muted:#9ca3af;
+                --accent:#60a5fa;
+                --accent2:#34d399;
+                --border:#1e293b;
+                --tag-border:#334155;
+            }
+            *
+            {
+                margin:0;
+                padding:0;
+                box-sizing:border-box;
+                font-family:'Inter',sans-serif;
+            }
+            body
+            {
+                background:var(--background);
+                line-height:1.7;
+                padding:60px;
+                color:var(--text);
+            }
+            .container
+            {
+                max-width:1200px;
+                margin:auto;
+            }
+            header
+            {
+                margin-bottom:60px;
+            }
+            a
+            {
+                color:inherit;
+                text-decoration:none;
+            }
+            .name
+            {
+                font-size:52px;
+                font-weight:700;
+                letter-spacing:-2px;
+            }
+            .title
+            {
+                margin-top:10px;
+                font-size:20px;
+                font-weight:500;
+                color:var(--accent);
+            }
+            .contact
+            {
+                margin-top:18px;
+                font-size:15px;
+                color:var(--muted);
+            }
+            .section
+            {
+                margin-bottom:60px;
+            }
+            .section-title
+            {
+                font-size:14px;
+                font-weight:600;
+                letter-spacing:2px;
+                text-transform:uppercase;
+                color:var(--accent2);
+                margin-bottom:24px;
+            }
+            .card
+            {
+                height:100%;
+                background:var(--card);
+                border:1px solid var(--border);
+                border-radius:18px;
+                padding:28px;
+                margin-bottom:24px;
+                transition:0.3s;
+            }
+            .card:hover
+            {
+                transform:translateY(-4px);
+                border-color:var(--accent);
+            }
+            .card-title
+            {
+                font-size:24px;
+                font-weight:600;
+            }
+            .meta
+            {
+                margin-top:8px;
+                font-size:14px;
+                color:var(--muted);
+            }
+            .description
+            {
+                margin-top:18px;
+            }
+            .grid
+            {
+                display:grid;
+                grid-template-columns:1fr 1fr;
+                gap:24px;
+                align-items:start;
+            }
+            .skill-title
+            {
+                font-size:20px;
+                font-weight:600;
+                margin-bottom:20px;
+            }
+            .skill-group
+            {
+                margin-bottom:20px;
+            }
+            .group-title
+            {
+                font-size:13px;
+                font-weight:600;
+                letter-spacing:1px;
+                text-transform:uppercase;
+                color:var(--accent);
+                margin-bottom:10px;
+            }
+            .tags
+            {
+                display:flex;
+                flex-wrap:wrap;
+                gap:10px;
+            }
+            .tag
+            {
+                background:var(--soft);
+                border:1px solid var(--tag-border);
+                border-radius:1000px;
+                padding:8px 12px;
+                font-size:13px;
+                transition:0.2s;
+            }
+            .tag:hover
+            {
+                background:var(--accent);
+                color:black;
+            }
+            .project-stack
+            {
+                margin-top:18px;
+            }
+            ul
+            {
+                margin-top:12px;
+                padding-left:20px;
+            }
+            li
+            {
+                margin-bottom:10px;
+            }
+            .footer
+            {
+                margin-top:80px;
+                text-align:center;
+                font-size:14px;
+                color:var(--muted);
+            }
+            @media(max-width:768px)
+            {
+                body
+                {
+                    padding:30px 20px;
+                }
+                .name
+                {
+                    font-size:36px;
+                    letter-spacing:-1px;
+                }
+                .grid
+                {
+                    grid-template-columns:1fr; 
+                    gap:20px;
+                }
+                header,.section
+                {
+                    margin-bottom:40px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="name">Jarrett Zhang</div>
+                <div class="title">AI & Algorithm Researcher · Chartered Financial Analyst</div>
+                <div class="contact">realJarrettZhang@gmail.com · <a href="https://github.com" style="color:inherit" target="_blank">Github</a> · <a href="https://linkedin.com" style="color:inherit" target="_blank">LinkedIn</a> · <a href="https://scholar.google.com" style="color:inherit" target="_blank">Google Scholar</a></div>
+            </header>
+            <!-- Education -->
+            <section class="section">
+                <div class="section-title">Education</div>
+                <div class="card">
+                    <div class="card-title">University Name 1</div>
+                    <div class="meta">Master of Engineering in Computer Science · 20XX~20XX</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">University Name 2</div>
+                    <div class="meta">Doctor of Engineering in Computer Science · 20XX~20XX</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">University Name 3</div>
+                    <div class="meta">Master of Business Administration · 20XX~20XX</div>
+                </div>
+            </section>
+            <!-- Capabilities -->
+            <section class="section">
+                <div class="section-title">Capabilities</div>
+                <div class="grid">
+                    <!-- Mathematics -->
+                    <div class="card">
+                        <div class="skill-title">Mathematics</div>
+                        <div class="skill-group">
+                            <div class="group-title">Foundations</div>
+                            <div class="tags">
+                                <div class="tag">Real Analysis</div>
+                                <div class="tag">Linear Algebra</div>
+                                <div class="tag">Functional Analysis</div>
+                                <div class="tag">Complex Analysis</div>
+                                <div class="tag">Abstract Algebra</div>
+                            </div>
+                        </div>
+                        <div class="skill-group">
+                            <div class="group-title">Applications</div>
+                            <div class="tags">
+                                <div class="tag">Probability & Statistics</div>
+                                <div class="tag">Discrete Mathematics</div>
+                                <div class="tag">Numerical Methods</div>
+                                <div class="tag">Optimization</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Computer Science -->
+                    <div class="card">
+                        <div class="skill-title">Computer Science</div>
+                        <div class="skill-group">
+                            <div class="group-title">Languages</div>
+                            <div class="tags">
+                                <div class="tag">Python</div>
+                                <div class="tag">C++</div>
+                                <div class="tag">x86 Assembly</div>
+                                <div class="tag">SQL</div>
+                                <div class="tag">HTML</div>
+                            </div>
+                        </div>
+                        <div class="skill-group">
+                            <div class="group-title">Systems</div>
+                            <div class="tags">
+                                <div class="tag">Operating Systems</div>
+                                <div class="tag">Computer Networks</div>
+                                <div class="tag">Computer Architecture</div>
+                                <div class="tag">Database Systems</div>
+                                <div class="tag">Compilers</div>
+                            </div>
+                        </div>
+                        <div class="skill-group">
+                            <div class="group-title">AI</div>
+                            <div class="tags">
+                                <div class="tag">Machine Learning</div>
+                                <div class="tag">Deep Learning</div>
+                                <div class="tag">Reinforcement Learning</div>
+
+                            </div>
+                        </div>
+                        <div class="skill-group">
+                            <div class="group-title">Others</div>
+                            <div class="tags">
+                                <div class="tag">Quantum Computing</div>
+                                <div class="tag">Brain-Computer Interfaces</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Finance -->
+                    <div class="card">
+                        <div class="skill-title">Finance</div>
+                        <div class="skill-group">
+                            <div class="tags">
+                                <div class="tag">Quantitative Methods</div>
+                                <div class="tag">Economics</div>
+                                <div class="tag">Financial Statement Analysis</div>
+                                <div class="tag">Corporate Issuers</div>
+                                <div class="tag">Equity Investments</div>
+                                <div class="tag">Fixed Income</div>
+                                <div class="tag">Derivatives</div>
+                                <div class="tag">Alternative Investments</div>
+                                <div class="tag">Portfolio Management</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Languages -->
+                    <div class="card">
+                        <div class="skill-title">Languages</div>
+                        <div class="skill-group">
+                            <div class="tags">
+                                <div class="tag">Chinese (Native)</div>
+                                <div class="tag">English (CET-6 IELTS-8)</div>
+                                <div class="tag">Japanese (JLPT N1)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Projects -->
+            <section class="section">
+                <div class="section-title">Projects</div>
+                <div class="card">
+                    <div class="card-title">Catastrophe Prediction System Based on Deep Originium Spectrum</div>
+                    <div class="meta">20XX - Present</div>
+                    <div class="description">
+                        <ul>
+                            <li>Developed a catastrophe forecasting framework based on deep-layer Originium spectral resonance analysis and sub-crust energy fluctuation modeling.</li>
+                            <li>Designed distributed seismic–Originium sensor arrays capable of detecting pre-catastrophic waveform instability and anomalous Arts-active signatures.</li>
+                            <li>Implemented probabilistic prediction models for large-scale Catastrophe events through multi-source spectral correlation and temporal field reconstruction.</li>
+                            <li>Improved early-warning precision for nomadic infrastructure by integrating geophysical telemetry with high-density Originium response mapping.</li>
+                        </ul>
+                    </div>
+                    <div class="project-stack">
+                        <div class="group-title">Tech Stack</div>
+                        <div class="tags">
+                            <div class="tag">Originium Spectroscopy</div>
+                            <div class="tag">Geophysical Signal Processing</div>
+                            <div class="tag">Distributed Sensor Networks</div>
+                            <div class="tag">Predictive Field Modeling</div>
+                            <div class="tag">Catastrophe Dynamics Simulation</div>
+                            <div class="tag">Temporal Spectral Analysis</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">Arts Interference Weaponry and Counter-Arts Barrier Development</div>
+                    <div class="meta">20XX - Present</div>
+                    <div class="description">
+                        <ul>
+                            <li>Conducted research on phase-cancellation mechanisms for suppressing high-intensity Arts propagation in combat environments.</li>
+                            <li>Developed localized Counter-Arts field generators capable of destabilizing Originium-mediated casting structures and reducing Arts coherence.</li>
+                            <li>Constructed adaptive interference matrices for real-time disruption of hostile Arts signatures under dynamic battlefield conditions.</li>
+                            <li>Evaluated the stability, energy efficiency, and operational scalability of tactical anti-Arts shielding systems.</li>
+                        </ul>
+                    </div>
+                    <div class="project-stack">
+                        <div class="group-title">Tech Stack</div>
+                        <div class="tags">
+                            <div class="tag">Originium Field Engineering</div>
+                            <div class="tag">Phase Interference Systems</div>
+                            <div class="tag">Adaptive Signal Suppression</div>
+                            <div class="tag">Tactical Energy Barriers</div>
+                            <div class="tag">Neural–Arts Coupling Analysis</div>
+                            <div class="tag">High-Energy Resonance Control</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Research -->
+            <section class="section">
+                <div class="section-title">Research</div>
+                <div class="card">
+                    <div class="card-title">Research Interests</div>
+                    <div class="description">Non-Equilibrium Thermodynamics in Active Originium Systems · Information Storage and Entropy Transfer in Originium Phase Transitions · Cognitive Persistence and Information Continuity in Originium Media</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">Publications</div>
+                    <div class="description">
+                        <ul>
+                            <li><strong>Information Entropy Leakage During Originium Phase Transition Processes</strong>, Journal of Originium Thermodynamics, vol. 18, no. 4 (1097)</li>
+                            <li><strong>A Neural Erosion Model for Crystallization Progression in Oripathic Tissue</strong>, International Review of Oripathy Pathophysiology, vol. 32, no. 2 (1098)</li>
+                            <li><strong>A Survey of Autonomous Scheduling Algorithms for Arts-Driven Industrial Systems</strong>, Transactions on Originium Industrial Automation, pp. 5–38 (1100)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <div class="footer">© 2026 Jarrett Zhang. All rights reserved.</div>
+        </div>
+    </body>
+</html>
