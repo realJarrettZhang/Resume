@@ -88,7 +88,7 @@
                 margin-bottom:24px;
                 transition:0.3s;
             }
-            .card:hover
+            .card:active
             {
                 transform:translateY(-4px);
                 border-color:var(--accent);
@@ -149,7 +149,7 @@
                 font-size:13px;
                 transition:0.2s;
             }
-            .tag:hover
+            .tag:active
             {
                 background:var(--accent);
                 color:black;
@@ -195,6 +195,19 @@
                     margin-bottom:40px;
                 }
             }
+            @media(hover:hover)
+            {
+                .card:hover
+                {
+                    transform:translateY(-4px);
+                    border-color:var(--accent);
+                }
+                .tag:hover
+                {
+                    background:var(--accent);
+                    color:black;
+                }
+            }
         </style>
     </head>
     <body>
@@ -208,16 +221,16 @@
             <section class="section">
                 <div class="section-title">Education</div>
                 <div class="card">
-                    <div class="card-title">University Name 1</div>
-                    <div class="meta">Master of Engineering in Computer Science · 20XX~20XX</div>
+                    <div class="card-title">Harbin Institute of Technology</div>
+                    <div class="meta">Master of Engineering in Computer Science · 2030</div>
                 </div>
                 <div class="card">
-                    <div class="card-title">University Name 2</div>
-                    <div class="meta">Doctor of Engineering in Computer Science · 20XX~20XX</div>
+                    <div class="card-title">Tsinghua University</div>
+                    <div class="meta">Doctor of Engineering in Computer Science · 2033</div>
                 </div>
                 <div class="card">
-                    <div class="card-title">University Name 3</div>
-                    <div class="meta">Master of Business Administration · 20XX~20XX</div>
+                    <div class="card-title">Harvard Business School</div>
+                    <div class="meta">Master of Business Administration · 2035</div>
                 </div>
             </section>
             <!-- Capabilities -->
@@ -314,7 +327,7 @@
                 <div class="section-title">Projects</div>
                 <div class="card">
                     <div class="card-title">Project Title 1</div>
-                    <div class="meta">20XX - Present</div>
+                    <div class="meta">2077 - Present</div>
                     <div class="description">
                         <ul>
                             <li>Description of Project 1.</li>
@@ -333,7 +346,7 @@
                 </div>
                 <div class="card">
                     <div class="card-title">Project Title 2</div>
-                    <div class="meta">20XX - Present</div>
+                    <div class="meta">2077 - Present</div>
                     <div class="description">
                         <ul>
                             <li>Description of Project 2.</li>
@@ -362,9 +375,10 @@
                     <div class="card-title">Publications</div>
                     <div class="description">
                         <ul>
-                            <li><strong>Outline of Algorithms</strong>, Press Name, 20XX</li>
-                            <li><strong>Article Title 1</strong>, Journal Name, 20XX</li>
-                            <li><strong>Article Title 2</strong>, Conference Name, 20XX</li>
+                            <li><strong>Outline of Algorithms</strong>, Press Name, 2077</li>
+                            <li><strong>Statistical Machine Learning</strong>, Press Name, 2077</li>
+                            <li><strong>Article Title 1</strong>, Journal Name, 2077</li>
+                            <li><strong>Article Title 2</strong>, Conference Name, 2077</li>
                         </ul>
                     </div>
                 </div>
