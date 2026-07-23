@@ -88,7 +88,7 @@
                 margin-bottom:24px;
                 transition:0.3s;
             }
-            .card:active
+            .card:hover,.card:focus
             {
                 transform:translateY(-4px);
                 border-color:var(--accent);
@@ -149,7 +149,7 @@
                 font-size:13px;
                 transition:0.2s;
             }
-            .tag:active
+            .tag:hover,.tag:focus
             {
                 background:var(--accent);
                 color:black;
@@ -195,19 +195,6 @@
                     margin-bottom:40px;
                 }
             }
-            @media(hover:hover)
-            {
-                .card:hover
-                {
-                    transform:translateY(-4px);
-                    border-color:var(--accent);
-                }
-                .tag:hover
-                {
-                    background:var(--accent);
-                    color:black;
-                }
-            }
         </style>
     </head>
     <body>
@@ -220,15 +207,15 @@
             <!-- Education -->
             <section class="section">
                 <div class="section-title">Education</div>
-                <div class="card">
+                <div class="card" tabindex="0">
                     <div class="card-title">Harbin Institute of Technology</div>
                     <div class="meta">Master of Engineering in Computer Science · 2030</div>
                 </div>
-                <div class="card">
+                <div class="card" tabindex="0">
                     <div class="card-title">Tsinghua University</div>
                     <div class="meta">Doctor of Engineering in Computer Science · 2033</div>
                 </div>
-                <div class="card">
+                <div class="card" tabindex="0">
                     <div class="card-title">Harvard Business School</div>
                     <div class="meta">Master of Business Administration · 2035</div>
                 </div>
@@ -238,7 +225,7 @@
                 <div class="section-title">Capabilities</div>
                 <div class="grid">
                     <!-- Mathematics -->
-                    <div class="card">
+                    <div class="card" tabindex="0">
                         <div class="skill-title">Mathematics</div>
                         <div class="skill-group">
                             <div class="group-title">Foundations</div>
@@ -262,7 +249,7 @@
                         </div>
                     </div>
                     <!-- Computer Science -->
-                    <div class="card">
+                    <div class="card" tabindex="0">
                         <div class="skill-title">Computer Science</div>
                         <div class="skill-group">
                             <div class="group-title">Languages</div>
@@ -293,7 +280,7 @@
                         </div>
                     </div>
                     <!-- Finance -->
-                    <div class="card">
+                    <div class="card" tabindex="0">
                         <div class="skill-title">Finance</div>
                         <div class="skill-group">
                             <div class="tags">
@@ -310,7 +297,7 @@
                         </div>
                     </div>
                     <!-- Languages -->
-                    <div class="card">
+                    <div class="card" tabindex="0">
                         <div class="skill-title">Languages</div>
                         <div class="skill-group">
                             <div class="tags">
@@ -325,7 +312,7 @@
             <!-- Projects -->
             <section class="section">
                 <div class="section-title">Projects</div>
-                <div class="card">
+                <div class="card" tabindex="0">
                     <div class="card-title">Project Title 1</div>
                     <div class="meta">2077 - Present</div>
                     <div class="description">
@@ -344,7 +331,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card" tabindex="0">
                     <div class="card-title">Project Title 2</div>
                     <div class="meta">2077 - Present</div>
                     <div class="description">
@@ -367,11 +354,11 @@
             <!-- Research -->
             <section class="section">
                 <div class="section-title">Research</div>
-                <div class="card">
+                <div class="card" tabindex="0">
                     <div class="card-title">Research Interests</div>
                     <div class="description">Field 1 · Field 2 · Field 3</div>
                 </div>
-                <div class="card">
+                <div class="card" tabindex="0">
                     <div class="card-title">Publications</div>
                     <div class="description">
                         <ul>
